@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+}
+a:hover {
+    color: hsl(270, 9%, 17%);
+}
+body {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+img {
+    width: 100%;
+}
+button {
+    text-transform: uppercase;
+}
+/* Bootstrap utilities */
+.container,
+.row {
+    height: inherit;
+}
+.btn-ouline-light {
+    border: 1px solid hsl(270, 9%, 17%);
+}
+.diff_row {
+    margin-top: 25rem;
+}
+/* Navbar */
+.navbar {
+    z-index: 99;
+}
+/* header */
+#main-header {
+    height: 85vh;
+    background-color: hsl(256, 26%, 20%);
+}
+#main-header .container,
+#main-header .row {
+    height: inherit;
+}
+#main-header h1{
+    color: hsl(0, 0%, 98%);
+    font-size: 6rem;
+}
+.img-mobile {
+    display: none;
+}
+.humanizing h1{
+    color: hsl(0, 0%, 98%);
+}
+.humanizing p {
+    color: white;
+}
+.line {
+    margin-top: 7rem;
+}
+.pattern-right{
+    width: 460px;
+    left: 70%;
+    top: -15%;
+}
+.pattern-left {
+    width: 180px;
+    top: 60%;
+}
+@media (max-width: 768px){
+    .container,
+    .row {
+        height: inherit;
+    }
+    #main-header .img-desk {
+        display: none;
+    }
+    #main-header .img-mobile {
+        display: block;
+        top: 0;
+        bottom: 50%;
+    }
+    #main-header h1 {
+        font-size: 5rem;
+    }
+    .humanizing {
+        top: 50%;
+    }
+}
